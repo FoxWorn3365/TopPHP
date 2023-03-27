@@ -1,7 +1,5 @@
-plugins:
-  - jekyll-default-layout
 title: YOUR TITLE
 description: YOUR DESCRIPTION
-theme: just-the-docs
+remote_theme: just-the-docs
 
 url: https://foxworn3365.github.io/TopPHP
