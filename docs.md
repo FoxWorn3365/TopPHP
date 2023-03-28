@@ -1,6 +1,38 @@
 # TopPHP2 - Documentation
 Through this unofficial library you can quickly interact with the top.gg API. 
 
+## Table of Contents
+* [Bot object](#bot-object)
+    * [Getting the bot object](#getting-the-bot-object)
+    * [Get bot's stats](#get-bots-stats)
+    * [Get last 1000 votes](#get-last-1000-votes)
+    * [Individual user vote](#individual-user-vote)
+    * [Update stats](#update-stats)
+    * [Bot informations](#bot-information)
+* [User object](#user-object)
+    * [Getting the user object](#getting-the-user-object)
+    * [Check if the user has voted a bot](#check-if-an-user-has-voted-the-bot)
+    * [User information](#user-information)
+* [Webhook management](#webhook-management)
+    * [Webhook configuration](#webhook-configuration)
+    * [Getting the webhook object](#getting-the-webhook-object)
+    * [Configuration of Authorization key](#configuration-of-authorization-key)
+    * [Exceptions management](#exceptions-management)
+    * [Event listener configuration](#event-listener-configuration)
+    * [Starting the client](#starting-the-client)
+* [Exceptions management](#exceptions-management-1)
+    * [Basic exception structure](#basic-exception-structure)
+    * [Managing exceptions](#managing-exceptions)
+    * [Managing Webhooks exceptions](#managing-webhooks-exceptions)
+* [Caching](#caching)
+* [Main class configuration](#main-class-configuration)
+* [Code examples](#code-examples)
+    * [Getting a bot's prefix](#getting-a-bots-prefix)
+    * [Check if an user has voted the bot](#check-if-an-user-has-voted-the-bot)
+    * [Get bot stats](#get-bot-stats)
+    * [Handle exception](#handle-exception)
+    * [Using webhooks while handling errors](#using-webhooks-while-handling-errors)
+
 ## Bot object
 TopPHP2 handles bots as objects, so that all functions related to a bot are grouped in a single place
 #### `TopPHP\Components\Bot`
