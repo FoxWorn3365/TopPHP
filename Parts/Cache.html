@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oxed - WebSocket Events Documentation</title>
+    <link href="https://resources.fcosma.it/w3.css" rel="stylesheet">
+    <link href="/docs/this.css" rel="stylesheet">
+  </head>
+  <body>
+  <!-- DOCUMENT -->
+   <div class='docs'>
+     <div class='docs-top'>
+       <div class='docs-title'><strong>WebSocket Events Documentation</strong></div>
+     </div>
+     <div class='docs-inheirt'>
+    <span class='docs-parent'><strong>TopPHP</strong></span>
+    <div class='docs-child'>
+      <span class='docs-parent'>Components</span>
+      <div class='docs-child'>
+        <div class='docs-child'>
+        <a href='/docs/TopPHP/Components/Bot'>Bot</a><br>
+        <a href='/docs/TopPHP/Components/Bots'>Bots</a><br>
+        <a href='/docs/TopPHP/Components/User'>User</a><br>
+        <a href='/docs/TopPHP/Components/Users'>Users</a><br>
+        </div>
+      </div></div>
+      <br>
+    <div class='docs-child'>
+    <div class='docs-child'>
+    <a href='/docs/TopPHP/TopPHP'>TopPHP</a><br>
+    </div>
+  </div>
+  <br>
+    <div class='docs-child'>
+    <span class='docs-parent'>Parts</span>
+    <div class='docs-child'>
+      <div class='docs-child'>
+      <a href='/docs/TopPHP/Parts/Cache'>Cache</a><br>
+      <a href='/docs/TopPHP/Parts/Collection'>Collection</a><br>
+      <a href='/docs/TopPHP/Parts/Http'>Http</a><br>
+      </div>
+    </div></div>
+    <br>
+    <div class='docs-child'>
+    <span class='docs-parent'>Parts</span>
+    <div class='docs-child'>
+      <span class='docs-parent'>Webhooks</span>
+      <div class='docs-child'>
+        <div class='docs-child'>
+        <a href='/docs/TopPHP/Parts/Webhooks/EventLoop'>EventLoop</a><br>
+        <a href='/docs/TopPHP/Parts/Webhooks/Webhook'>Webhook</a><br>
+        </div>
+      </div></div></div>
+      <br>
+
+     </div>
+     <div class='docs-internal'>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,500;0,600;0,800;1,300&display=swap');
+
+body {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+}
+
+.docs {
+  text-align: left;
+  /*margin-left: 50px; - OUTDATED PARAM*/
+}
+
+.docs-title {
+  font-size: 65px;
+}
+
+.docs-class {
+  font-size: 45px;
+}
+
+.docs-parent {
+  font-size: 28px;
+  display: block;
+}
+
+.methods-others {
+  font-size: 25px;
+}
+
+.methods-type {
+  font-size: 22px;
+}
+
+.method-icon {
+  display: inline-block;
+  height: 40px;
+  font-size: 25px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #0f0f0f;
+  color: #b3b3b3;
+  font-weight: bold;
+  margin-right: 5px;
+  padding-left: 10px;
+}
+
+.docs-child {
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+.docs-internal {
+  width: 75%;
+  position: absolute;
+  right: 0px;
+}
+
+.docs-inheirt {
+  position: absolute;
+  width: 21%;
+  border-right: solid 1px white;
+  left: 0px;
+  height: 100%;
+  margin-left: 3%;
+}
+
+.docs-top {
+  margin: 25px;
+  padding-left: 3%;
+  width: 100%;
+}
+
+.docs-map {
+  padding-right: 20px;
+  font-size: 20px;
+  background-color: #32353b;
+  border-radius: 15px;
+  padding: 12px;
+  width: fit-content;
+}
+
+.docs-link {
+  color: #23a4f4;
+  text-decoration: underline;
+}
+
+.docs-link-gray {
+  color: lightGray;
+  text-decoration: underline;
+}
+
+.docs-link-menu {
+  display: block;
+  color: #23a4f4;
+  text-decoration: none;
+}
+
+.docs-no-dec {
+  text-decoration: none;
+}
+
+.docs-abbl {
+  font-size: 20px;
+}
+
+.docs-subtitle {
+  font-size: 55px;
+}
+
+.doc {
+  padding: 25px;
+  opacity: 0.97;
+}
+
+.doc-title {
+  font-size: 40px;
+}
+
+.doc-content {
+  margin-left: 10px;
+  font-size: 19px;
+}
+
+.box {
+  margin-top: 7px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  padding: 6px;
+  font-size: 17px;
+  color: white;
+}
+
+.warn {
+  background-color: #cf9c29;
+  border-left: solid 6px #7c641c;
+}
+
+.box-title {
+  font-weight: 400;
+  font-size: 22px;
+  display: block;
+}
+
+.note {
+  background-color: #539ae1;
+  border-left: solid 6px #0c2cb9;
+}
+
+.code {
+  border-left: solid 6px black;
+  background-color: black;
+  color: lightGray;
+}
+
+.base {
+  border-left: solid 6px gray;
+}
+
+.important {
+  background: #bf1f1f;
+  border-left: solid 6px #ff0000;
+}
+
+.new-tag {
+  color: white;
+  display: inline;
+  border-radius: 20px;
+  padding: 2px;
+  background-color: #236136;
+  border: solid 1.5px #3ba55d;
+}
+
+.new-tag-margin {
+  margin-left: 3px;
+  margin-right: 10px;
+}
+
+.docs-arg {
+  background-color: #1f1f1f;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.docs-bottom-magic {
+  background-color: black;
+  border-radius: 25px;
+  position: absolute;
+  padding-left: 7px;
+  padding-right: 7px;
+  right: 10px;
+}
+</style>
+        <div class='docs-class'>TopPHP\Parts\<strong>Cache </strong></div>
+        <div class='doc'>
+          <br>
+          <div class='method-icon'>M</div><a href='#isinit()' class='methods-others'><strong>isInit()</strong></a><span class='methods-type'> : bool</span><br>
+          <div class='method-icon'>M</div><a href='#init()' class='methods-others'><strong>init()</strong></a><span class='methods-type'> : void</span><br>
+          <div class='method-icon'>M</div><a href='#set()' class='methods-others'><strong>set()</strong></a><span class='methods-type'> : void</span><br>
+          <div class='method-icon'>M</div><a href='#is()' class='methods-others'><strong>is()</strong></a><span class='methods-type'> : bool</span><br>
+          <div class='method-icon'>M</div><a href='#get()' class='methods-others'><strong>get()</strong></a><span class='methods-type'> : mixed</span><br>
+
+        </div>
+        <div class='doc'>
+          <a class='doc-title' href='#isinit()' id='isinit()'><strong>isInit()</strong></a>
+          <div class='doc-content'>
+            <div class='box code'><span style='color: #68a1fc'>public</span> <span style='color: #68a1fc'>static</span> isInit( <span style='color: #88fcd6'></span>  ) : <span style='color: #88fcd6'><a href='bool'>bool</a></span></div>
+            
+          </div>
+        </div>
+        <div class='doc'>
+          <a class='doc-title' href='#init()' id='init()'><strong>init()</strong></a>
+          <div class='doc-content'>
+            <div class='box code'><span style='color: #68a1fc'>public</span> <span style='color: #68a1fc'>static</span> init( <span style='color: #88fcd6'></span>  ) : <span style='color: #88fcd6'><a href='void'>void</a></span></div>
+            
+          </div>
+        </div>
+        <div class='doc'>
+          <a class='doc-title' href='#set()' id='set()'><strong>set()</strong></a>
+          <div class='doc-content'>
+            <div class='box code'><span style='color: #68a1fc'>public</span> <span style='color: #68a1fc'>static</span> set( <span style='color: #68a1fc'>string</span> $name , <span style='color: #68a1fc'>mixed</span> $value ) : <span style='color: #88fcd6'><a href='void'>void</a></span></div>
+            <span style='font-size: 25px'><strong>Parameters</strong></span><br>$name <span style='color: #68a1fc'>string</span> : <br>$value <span style='color: #68a1fc'>mixed</span> : 
+          </div>
+        </div>
+        <div class='doc'>
+          <a class='doc-title' href='#is()' id='is()'><strong>is()</strong></a>
+          <div class='doc-content'>
+            <div class='box code'><span style='color: #68a1fc'>public</span> <span style='color: #68a1fc'>static</span> is( <span style='color: #68a1fc'>string</span> $name ) : <span style='color: #88fcd6'><a href='bool'>bool</a></span></div>
+            <span style='font-size: 25px'><strong>Parameters</strong></span><br>$name <span style='color: #68a1fc'>string</span> : 
+          </div>
+        </div>
+        <div class='doc'>
+          <a class='doc-title' href='#get()' id='get()'><strong>get()</strong></a>
+          <div class='doc-content'>
+            <div class='box code'><span style='color: #68a1fc'>public</span> <span style='color: #68a1fc'>static</span> get( <span style='color: #68a1fc'>string</span> $name ) : <span style='color: #88fcd6'><a href='mixed'>mixed</a></span></div>
+            <span style='font-size: 25px'><strong>Parameters</strong></span><br>$name <span style='color: #68a1fc'>string</span> : 
+          </div>
+        </div>
+        <br><br>
+        <div class="docs-bottom">
+          <div class="docs-bottom-magic">
+            Powered by
+            <span style="font-size: 35px;">OxedDocs</span>
+          </div>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
