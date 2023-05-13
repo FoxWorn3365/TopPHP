@@ -1,6 +1,10 @@
 # TopPHP2 - Documentation
 Through this unofficial library you can quickly interact with the top.gg API. 
 
+## WARNING!
+> **You should use the [CLASS REFERENCE](https://foxworn3365.github.io/TopPHP/TopPHP) instead of this documentation!**
+
+
 ## Table of Contents
 * [Bot object](#bot-object)
     * [Getting the bot object](#getting-the-bot-object)
