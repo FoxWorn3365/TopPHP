@@ -18,6 +18,7 @@ This library, unlike its predecessor has many advantages that will allow you saf
 
 ## Documentation
 See [here](/docs.md) for the official information.
+**[HERE](https://foxworn3365.github.io/TopPHP/TopPHP) you can access to the Class Reference**
 
 ## Installation
 TopPHP uses composer to download. In order to install the library, use the following line:
